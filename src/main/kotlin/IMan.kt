@@ -1,3 +1,3 @@
 interface IMan {
-    fun getCloth(degrees: Int)
+    fun watchVideo(videoQuality: Int)
 }

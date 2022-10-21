@@ -1,11 +1,9 @@
-data class Man(val name: String, val surname: String): IMan {
-    private val TAG = Man::class.java.simpleName
-
-    override fun getCloth(degrees: Int) {
-        if (degrees > 0){
-            println("$name $surname is Warm")
+data class Man(val name: String, val surname: String, val expectation: Int): IMan {
+    override fun watchVideo(videoQuality: Int) {
+        if (videoQuality > expectation){
+            println("$name $surname ($expectation) commented: 'This video is good'")
         } else {
-            println("$name $surname is Cold")
+            println("$name $surname ($expectation) commented: 'This video is shit'")
         }
     }
 }
